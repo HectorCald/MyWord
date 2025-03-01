@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Personalizado</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WORDLE PERSONALIZADO</h1>
+        
+        <!-- Sección para configurar palabra -->
+        <div id="setup-screen" class="screen">
+            <h2>Configura una palabra para adivinar</h2>
+            <div class="input-group">
+                <input type="text" id="custom-word" placeholder="Escribe una palabra" maxlength="10">
+                <button id="start-game" onclick="Word()">Comenzar Juego</button>
+            </div>
+            <p class="hint">La palabra debe tener 5 letras</p>
+        </div>
+        
+        <!-- Sección para el juego -->
+        <div id="game-screen" class="screen hidden">
+            <div class="info-bar">
+                <div class="attempts">Intentos: <span id="attempts">6</span></div>
+                <button id="reset-game">Reiniciar</button>
+            </div>
+            
+            <div id="game-board">
+                <!-- Las filas de intentos se generarán con JavaScript -->
+            </div>
+            
+            <div id="keyboard">
+                <div class="keyboard-row">
+                    <button class="key" data-key="Q">Q</button>
+                    <button class="key" data-key="W">W</button>
+                    <button class="key" data-key="E">E</button>
+                    <button class="key" data-key="R">R</button>
+                    <button class="key" data-key="T">T</button>
+                    <button class="key" data-key="Y">Y</button>
+                    <button class="key" data-key="U">U</button>
+                    <button class="key" data-key="I">I</button>
+                    <button class="key" data-key="O">O</button>
+                    <button class="key" data-key="P">P</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key" data-key="A">A</button>
+                    <button class="key" data-key="S">S</button>
+                    <button class="key" data-key="D">D</button>
+                    <button class="key" data-key="F">F</button>
+                    <button class="key" data-key="G">G</button>
+                    <button class="key" data-key="H">H</button>
+                    <button class="key" data-key="J">J</button>
+                    <button class="key" data-key="K">K</button>
+                    <button class="key" data-key="L">L</button>
+                    <button class="key" data-key="Ñ">Ñ</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key" data-key="Z">Z</button>
+                    <button class="key" data-key="X">X</button>
+                    <button class="key" data-key="C">C</button>
+                    <button class="key" data-key="V">V</button>
+                    <button class="key" data-key="B">B</button>
+                    <button class="key" data-key="N">N</button>
+                    <button class="key" data-key="M">M</button>
+                    <button class="key delete" data-key="Delete">⌫</button>
+                    <button class="key enter" data-key="Enter">ENTER</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección para mensaje final -->
+        <div id="result-screen" class="screen hidden">
+            <h2 id="result-message"></h2>
+            <p>La palabra era: <span id="solution-word"></span></p>
+            <button id="play-again">Jugar de nuevo</button>
+        </div>
+    </div>
+    
+    <script src="./script2.js"></script>
+</body>
+</html>

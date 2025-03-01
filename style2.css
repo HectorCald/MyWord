@@ -252,12 +252,12 @@ button:hover {
     
     .key {
         height: 50px;
-        min-width: 40px;
+        min-width: 50px;
         font-size: 1.2rem;
     }
     
     .key.delete, .key.enter {
-        min-width: 50px;
+        min-width: 55px;
         font-size: 0.8rem;
     }
 }
@@ -271,13 +271,13 @@ button:hover {
     
     .key {
         height: 45px;
-        min-width: 35px;
+        min-width: 45px;
         font-size: 1rem;
         padding: 0 4px;
     }
     
     .key.delete, .key.enter {
-        min-width: 45px;
+        min-width: 55px;
         font-size: 0.7rem;
     }
 }

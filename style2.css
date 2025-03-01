@@ -252,7 +252,7 @@ button:hover {
     
     .key {
         height: 50px;
-        min-width: 45px;
+        min-width: 40px;
         font-size: 1.2rem;
     }
     
@@ -271,7 +271,7 @@ button:hover {
     
     .key {
         height: 45px;
-        min-width: 40px;
+        min-width: 35px;
         font-size: 1rem;
         padding: 0 4px;
     }

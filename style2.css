@@ -172,7 +172,7 @@ button:hover {
 
 .key {
     height: 58px;
-    min-width: 40px;
+    min-width: 45px;
     padding: 0 8px;
     border-radius: 4px;
     display: flex;
